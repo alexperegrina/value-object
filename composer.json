@@ -1,0 +1,22 @@
+{
+    "name": "alexperegrina/value-object",
+    "description": "ValueObject library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Peregrina",
+            "email": "alexperegrina@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AlexPeregrina\\ValueObject\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8",
+        "marc-mabe/php-enum": "^4.6",
+        "ramsey/uuid": "^4.2"
+    }
+}
