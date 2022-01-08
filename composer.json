@@ -17,6 +17,7 @@
     "require": {
         "php": ">=8",
         "marc-mabe/php-enum": "^4.6",
-        "ramsey/uuid": "^4.2"
+        "ramsey/uuid": "^4.2",
+        "league/geotools": "^0.8.3"
     }
 }
