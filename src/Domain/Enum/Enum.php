@@ -5,7 +5,7 @@ namespace AlexPeregrina\ValueObject\Domain\Enum;
 
 use MabeEnum\Enum as BaseEnum;
 
-abstract class AbstractEnum extends BaseEnum
+abstract class Enum extends BaseEnum
 {
     public function value(): null|bool|int|float|string|array
     {
