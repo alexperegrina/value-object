@@ -19,6 +19,12 @@
         "marc-mabe/php-enum": "^4.6",
         "ramsey/uuid": "^4.2",
         "league/geotools": "^0.8.3",
-        "moneyphp/money": "^4.0"
+        "moneyphp/money": "^4.0",
+        "doctrine/dbal": "^3.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     }
 }
