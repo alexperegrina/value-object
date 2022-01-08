@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87d1a416a36e6b9d351e91cf8504686a",
+    "content-hash": "99b4db860d0fea18ac8dd32039267c46",
     "packages": [
+        {
+            "name": "alexperegrina/response",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexperegrina/response.git",
+                "reference": "b514ef06f33265df2d59017201493e001f81eec5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexperegrina/response/zipball/b514ef06f33265df2d59017201493e001f81eec5",
+                "reference": "b514ef06f33265df2d59017201493e001f81eec5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AlexPeregrina\\Response\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Peregrina",
+                    "email": "alexperegrina@gmail.com"
+                }
+            ],
+            "description": "Response library",
+            "support": {
+                "issues": "https://github.com/alexperegrina/response/issues",
+                "source": "https://github.com/alexperegrina/response/tree/master"
+            },
+            "time": "2022-01-08T03:43:01+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.9.3",
@@ -2808,8 +2849,10 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "alexperegrina/response": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
