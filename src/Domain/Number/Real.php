@@ -56,4 +56,9 @@ class Real extends AbstractValueObject
         $naturalValue = abs($integerValue);
         return new Natural($naturalValue);
     }
+
+    public function add(Real $quantity): self
+    {
+        return new self($this->value + $quantity->value());
+    }
 }
