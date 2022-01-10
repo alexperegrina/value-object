@@ -11,7 +11,7 @@ class UuidType extends GuidType
 {
     public function getName()
     {
-        return Uuid::class;
+        return 'Uuid';
     }
 
     public function convertToPHPValue($value, AbstractPlatform $platform)

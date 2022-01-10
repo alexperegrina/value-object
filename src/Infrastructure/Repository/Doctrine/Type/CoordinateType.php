@@ -13,7 +13,7 @@ class CoordinateType extends JsonType
 {
     public function getName()
     {
-        return Coordinate::class;
+        return 'Coordinate';
     }
 
     public function convertToPHPValue($value, AbstractPlatform $platform)

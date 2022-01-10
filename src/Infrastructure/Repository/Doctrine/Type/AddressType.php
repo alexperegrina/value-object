@@ -16,7 +16,7 @@ class AddressType extends JsonType
 {
     public function getName()
     {
-        return Address::class;
+        return 'Address';
     }
 
     public function convertToPHPValue($value, AbstractPlatform $platform)
