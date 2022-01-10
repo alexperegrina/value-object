@@ -29,4 +29,9 @@ class StringVO extends AbstractValueObject
     {
         return $this->value() === $object->value();
     }
+
+    public function __toString(): string
+    {
+        return $this->value();
+    }
 }
