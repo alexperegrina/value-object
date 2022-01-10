@@ -4,8 +4,91 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99b4db860d0fea18ac8dd32039267c46",
+    "content-hash": "4fdee9fd234d0ff288df0f42a23b2e32",
     "packages": [
+        {
+            "name": "alexperegrina/geotools",
+            "version": "0.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexperegrina/geotools.git",
+                "reference": "4869ab26f3b88417901274f51fc6fde7e3189b91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexperegrina/geotools/zipball/4869ab26f3b88417901274f51fc6fde7e3189b91",
+                "reference": "4869ab26f3b88417901274f51fc6fde7e3189b91",
+                "shasum": ""
+            },
+            "require": {
+                "cache/array-adapter": "^1.0",
+                "ext-bcmath": "*",
+                "php": "^7.3 || ^7.4 || ^8.0",
+                "php-http/discovery": "^1.0",
+                "psr/cache": "^1.0",
+                "react/event-loop": "^1.0",
+                "react/promise": "^2.2",
+                "symfony/console": "^3.4 || ^4.4 || ^5.0",
+                "symfony/property-access": "^3.4 || ^4.4 || ^5.0",
+                "symfony/serializer": "^3.4 || ^4.4 || ^5.0",
+                "willdurand/geocoder": "^4.2"
+            },
+            "replace": {
+                "toin0u/geotools": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "bin": [
+                "bin/geotools"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Geotools\\": "src",
+                    "League\\Geotools\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antoine Corcy",
+                    "email": "contact@sbin.dk",
+                    "homepage": "http://sbin.dk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Geo-related tools PHP 7.3+ library",
+            "keywords": [
+                "async",
+                "batch",
+                "bounds",
+                "distance",
+                "geocoder",
+                "geocoding",
+                "geohash",
+                "geoip",
+                "geolocation",
+                "geometry",
+                "geotools",
+                "latitude",
+                "latlong",
+                "longitude"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/geotools/issues",
+                "source": "https://github.com/thephpleague/geotools"
+            },
+            "time": "2021-07-07T14:49:40+00:00"
+        },
         {
             "name": "alexperegrina/response",
             "version": "dev-master",
@@ -173,23 +256,23 @@
         },
         {
             "name": "cache/array-adapter",
-            "version": "1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-cache/array-adapter.git",
-                "reference": "71e72a51b76ed2668642a35690a7df7178f00670"
+                "reference": "a587dd9960173524e7b774c248e6252813971e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/array-adapter/zipball/71e72a51b76ed2668642a35690a7df7178f00670",
-                "reference": "71e72a51b76ed2668642a35690a7df7178f00670",
+                "url": "https://api.github.com/repos/php-cache/array-adapter/zipball/a587dd9960173524e7b774c248e6252813971e13",
+                "reference": "a587dd9960173524e7b774c248e6252813971e13",
                 "shasum": ""
             },
             "require": {
                 "cache/adapter-common": "^1.0",
                 "cache/hierarchical-cache": "^1.0",
-                "php": "^5.6 || ^7.0 || ^8.0",
-                "psr/cache": "^1.0",
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1.0 || ^2.0",
                 "psr/simple-cache": "^1.0"
             },
             "provide": {
@@ -197,9 +280,10 @@
                 "psr/simple-cache-implementation": "^1.0"
             },
             "require-dev": {
-                "cache/integration-tests": "^0.16",
-                "phpunit/phpunit": "^5.7.21"
+                "cache/integration-tests": "^0.17",
+                "phpunit/phpunit": "^7.5.20 || ^9.5.10"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -239,32 +323,33 @@
                 "tag"
             ],
             "support": {
-                "source": "https://github.com/php-cache/array-adapter/tree/1.1.0"
+                "source": "https://github.com/php-cache/array-adapter/tree/master"
             },
-            "time": "2020-12-14T12:17:39+00:00"
+            "time": "2022-01-03T13:51:42+00:00"
         },
         {
             "name": "cache/hierarchical-cache",
-            "version": "1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-cache/hierarchical-cache.git",
-                "reference": "ba3746c65461b17154fb855068403670fd7fa2d3"
+                "reference": "14fad3625bba608a5293272e3ad3ccccadfddf83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/hierarchical-cache/zipball/ba3746c65461b17154fb855068403670fd7fa2d3",
-                "reference": "ba3746c65461b17154fb855068403670fd7fa2d3",
+                "url": "https://api.github.com/repos/php-cache/hierarchical-cache/zipball/14fad3625bba608a5293272e3ad3ccccadfddf83",
+                "reference": "14fad3625bba608a5293272e3ad3ccccadfddf83",
                 "shasum": ""
             },
             "require": {
                 "cache/adapter-common": "^1.0",
-                "php": "^5.6 || ^7.0 || ^8.0",
-                "psr/cache": "^1.0"
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1.0 || ^2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7.21"
+                "phpunit/phpunit": "^7.5.20 || ^9.5.10"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -304,28 +389,29 @@
                 "psr-6"
             ],
             "support": {
-                "source": "https://github.com/php-cache/hierarchical-cache/tree/1.1.0"
+                "source": "https://github.com/php-cache/hierarchical-cache/tree/master"
             },
-            "time": "2020-12-14T12:17:39+00:00"
+            "time": "2022-01-03T13:51:42+00:00"
         },
         {
             "name": "cache/tag-interop",
-            "version": "1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-cache/tag-interop.git",
-                "reference": "b062b1d735357da50edf8387f7a8696f3027d328"
+                "reference": "a06c2c03555581cf3740a8c161bc680ce3265c61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-cache/tag-interop/zipball/b062b1d735357da50edf8387f7a8696f3027d328",
-                "reference": "b062b1d735357da50edf8387f7a8696f3027d328",
+                "url": "https://api.github.com/repos/php-cache/tag-interop/zipball/a06c2c03555581cf3740a8c161bc680ce3265c61",
+                "reference": "a06c2c03555581cf3740a8c161bc680ce3265c61",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5 || ^7.0 || ^8.0",
                 "psr/cache": "^1.0 || ^2.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -363,9 +449,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-cache/tag-interop/issues",
-                "source": "https://github.com/php-cache/tag-interop/tree/1.1.0"
+                "source": "https://github.com/php-cache/tag-interop/tree/master"
             },
-            "time": "2021-12-31T10:03:23+00:00"
+            "time": "2021-12-31T11:58:30+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -788,89 +874,6 @@
             "time": "2020-05-29T18:28:51+00:00"
         },
         {
-            "name": "league/geotools",
-            "version": "0.8.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/geotools.git",
-                "reference": "4869ab26f3b88417901274f51fc6fde7e3189b91"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/geotools/zipball/4869ab26f3b88417901274f51fc6fde7e3189b91",
-                "reference": "4869ab26f3b88417901274f51fc6fde7e3189b91",
-                "shasum": ""
-            },
-            "require": {
-                "cache/array-adapter": "^1.0",
-                "ext-bcmath": "*",
-                "php": "^7.3 || ^7.4 || ^8.0",
-                "php-http/discovery": "^1.0",
-                "psr/cache": "^1.0",
-                "react/event-loop": "^1.0",
-                "react/promise": "^2.2",
-                "symfony/console": "^3.4 || ^4.4 || ^5.0",
-                "symfony/property-access": "^3.4 || ^4.4 || ^5.0",
-                "symfony/serializer": "^3.4 || ^4.4 || ^5.0",
-                "willdurand/geocoder": "^4.2"
-            },
-            "replace": {
-                "toin0u/geotools": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5"
-            },
-            "bin": [
-                "bin/geotools"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Geotools\\": "src",
-                    "League\\Geotools\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Antoine Corcy",
-                    "email": "contact@sbin.dk",
-                    "homepage": "http://sbin.dk",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Geo-related tools PHP 7.3+ library",
-            "keywords": [
-                "async",
-                "batch",
-                "bounds",
-                "distance",
-                "geocoder",
-                "geocoding",
-                "geohash",
-                "geoip",
-                "geolocation",
-                "geometry",
-                "geotools",
-                "latitude",
-                "latlong",
-                "longitude"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/geotools/issues",
-                "source": "https://github.com/thephpleague/geotools"
-            },
-            "time": "2021-07-07T14:49:40+00:00"
-        },
-        {
             "name": "marc-mabe/php-enum",
             "version": "v4.6.0",
             "source": {
@@ -1150,7 +1153,7 @@
         },
         {
             "name": "psr/container",
-            "version": "2.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
@@ -1165,6 +1168,7 @@
             "require": {
                 "php": ">=7.4.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1559,23 +1563,23 @@
         },
         {
             "name": "react/promise",
-            "version": "v2.8.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "f3cff96a19736714524ca0dd1d4130de73dbbbc4"
+                "reference": "29daf46dbbe351dff533cec5bc556a0ded6590be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/f3cff96a19736714524ca0dd1d4130de73dbbbc4",
-                "reference": "f3cff96a19736714524ca0dd1d4130de73dbbbc4",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/29daf46dbbe351dff533cec5bc556a0ded6590be",
+                "reference": "29daf46dbbe351dff533cec5bc556a0ded6590be",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0 || ^6.5 || ^5.7 || ^4.8.36"
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.36"
             },
             "type": "library",
             "autoload": {
@@ -1603,22 +1607,32 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/promise/issues",
-                "source": "https://github.com/reactphp/promise/tree/v2.8.0"
+                "source": "https://github.com/reactphp/promise/tree/2.x"
             },
-            "time": "2020-05-12T15:16:56+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-17T15:31:12+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v5.4.2",
+            "version": "5.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "a2c6b7ced2eb7799a35375fb9022519282b5405e"
+                "reference": "72ff58c9163afd4bcec2bff53476c68d14489b29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/a2c6b7ced2eb7799a35375fb9022519282b5405e",
-                "reference": "a2c6b7ced2eb7799a35375fb9022519282b5405e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/72ff58c9163afd4bcec2bff53476c68d14489b29",
+                "reference": "72ff58c9163afd4bcec2bff53476c68d14489b29",
                 "shasum": ""
             },
             "require": {
@@ -1656,6 +1670,7 @@
                 "symfony/lock": "",
                 "symfony/process": ""
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1688,7 +1703,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.4.2"
+                "source": "https://github.com/symfony/console/tree/5.4"
             },
             "funding": [
                 {
@@ -1704,29 +1719,30 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-20T16:11:12+00:00"
+            "time": "2022-01-02T09:53:40+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.0.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "c726b64c1ccfe2896cb7df2e1331c357ad1c8ced"
+                "reference": "893fd20d9ae41a0bae2b9cbdd581ac0cf3917de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
-                "reference": "c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/893fd20d9ae41a0bae2b9cbdd581ac0cf3917de3",
+                "reference": "893fd20d9ae41a0bae2b9cbdd581ac0cf3917de3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.0-dev"
+                    "dev-main": "3.1-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -1755,7 +1771,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/main"
             },
             "funding": [
                 {
@@ -1771,7 +1787,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-01T23:48:49+00:00"
+            "time": "2021-11-29T18:10:03+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2346,16 +2362,16 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v5.4.2",
+            "version": "5.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "133c62a1be8a868134c4cced928568568d6b26f8"
+                "reference": "0e0693c58a886f32847ec8d2110b92b509236327"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/133c62a1be8a868134c4cced928568568d6b26f8",
-                "reference": "133c62a1be8a868134c4cced928568568d6b26f8",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/0e0693c58a886f32847ec8d2110b92b509236327",
+                "reference": "0e0693c58a886f32847ec8d2110b92b509236327",
                 "shasum": ""
             },
             "require": {
@@ -2370,6 +2386,7 @@
             "suggest": {
                 "psr/cache-implementation": "To cache access methods."
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2407,7 +2424,7 @@
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v5.4.2"
+                "source": "https://github.com/symfony/property-access/tree/5.4"
             },
             "funding": [
                 {
@@ -2423,20 +2440,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-11T16:33:38+00:00"
+            "time": "2022-01-02T09:53:40+00:00"
         },
         {
             "name": "symfony/property-info",
-            "version": "v6.0.2",
+            "version": "6.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "fc23cfd8fe8faa0712a8909f956cf2e46c72f6cf"
+                "reference": "1743621cf6fb4c07b37ea56d3e8e214ae1fe44f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/fc23cfd8fe8faa0712a8909f956cf2e46c72f6cf",
-                "reference": "fc23cfd8fe8faa0712a8909f956cf2e46c72f6cf",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/1743621cf6fb4c07b37ea56d3e8e214ae1fe44f0",
+                "reference": "1743621cf6fb4c07b37ea56d3e8e214ae1fe44f0",
                 "shasum": ""
             },
             "require": {
@@ -2445,7 +2462,7 @@
             },
             "conflict": {
                 "phpdocumentor/reflection-docblock": "<5.2",
-                "phpdocumentor/type-resolver": "<1.4.0",
+                "phpdocumentor/type-resolver": "<1.5.1",
                 "symfony/dependency-injection": "<5.4"
             },
             "require-dev": {
@@ -2496,7 +2513,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v6.0.2"
+                "source": "https://github.com/symfony/property-info/tree/6.1"
             },
             "funding": [
                 {
@@ -2512,11 +2529,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-27T21:05:08+00:00"
+            "time": "2022-01-02T09:56:25+00:00"
         },
         {
             "name": "symfony/serializer",
-            "version": "v5.4.2",
+            "version": "5.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
@@ -2573,6 +2590,7 @@
                 "symfony/var-exporter": "For using the metadata compiler.",
                 "symfony/yaml": "For using the default YAML mapping loader."
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2619,16 +2637,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v3.0.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "36715ebf9fb9db73db0cb24263c79077c6fe8603"
+                "reference": "bc0a2247c72d29241b5a06fb60dc1c9d9acf2a3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/36715ebf9fb9db73db0cb24263c79077c6fe8603",
-                "reference": "36715ebf9fb9db73db0cb24263c79077c6fe8603",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/bc0a2247c72d29241b5a06fb60dc1c9d9acf2a3a",
+                "reference": "bc0a2247c72d29241b5a06fb60dc1c9d9acf2a3a",
                 "shasum": ""
             },
             "require": {
@@ -2641,10 +2659,11 @@
             "suggest": {
                 "symfony/service-implementation": ""
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.0-dev"
+                    "dev-main": "3.1-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -2681,7 +2700,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/v3.0.0"
+                "source": "https://github.com/symfony/service-contracts/tree/main"
             },
             "funding": [
                 {
@@ -2697,20 +2716,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-04T17:53:12+00:00"
+            "time": "2021-11-29T18:10:03+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "v6.0.2",
+            "version": "6.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "bae261d0c3ac38a1f802b4dfed42094296100631"
+                "reference": "efb16c76e81fb7f745049f87df7af63c7a7a0026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/bae261d0c3ac38a1f802b4dfed42094296100631",
-                "reference": "bae261d0c3ac38a1f802b4dfed42094296100631",
+                "url": "https://api.github.com/repos/symfony/string/zipball/efb16c76e81fb7f745049f87df7af63c7a7a0026",
+                "reference": "efb16c76e81fb7f745049f87df7af63c7a7a0026",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2785,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.0.2"
+                "source": "https://github.com/symfony/string/tree/6.1"
             },
             "funding": [
                 {
@@ -2782,7 +2801,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-16T22:13:01+00:00"
+            "time": "2022-01-02T09:56:25+00:00"
         },
         {
             "name": "willdurand/geocoder",
