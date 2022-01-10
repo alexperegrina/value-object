@@ -22,7 +22,7 @@
         "moneyphp/money": "^4.0",
         "doctrine/dbal": "^3.2",
         "alexperegrina/response": "dev-master",
-        "alexperegrina/geotools": "^0.8.3"
+        "alexperegrina/geotools": "dev-master"
     },
     "config": {
         "allow-plugins": {
