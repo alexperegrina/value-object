@@ -10,8 +10,8 @@ class Name extends AbstractValueObject
 {
     public function __construct(
         protected StringVO $firstName,
-        protected StringVO $middleName,
-        protected StringVO $lastName,
+        protected ?StringVO $middleName = null,
+        protected ?StringVO $lastName = null,
     ) {}
 
     public function firstName(): StringVO
@@ -19,19 +19,29 @@ class Name extends AbstractValueObject
         return $this->firstName;
     }
 
-    public function middleName(): StringVO
+    public function middleName(): ?StringVO
     {
         return $this->middleName;
     }
 
-    public function lastName(): StringVO
+    public function setMiddleName(StringVO $middleName): void
+    {
+        $this->middleName = $middleName;
+    }
+
+    public function lastName(): ?StringVO
     {
         return $this->lastName;
     }
 
+    public function setLastName(StringVO $lastName): void
+    {
+        $this->lastName = $lastName;
+    }
+
     public function fullName(): StringVO
     {
-        return new StringVO($this->firstName->value().' '.$this->middleName->value().' '.$this->lastName->value());
+        return new StringVO($this->firstName->value().' '.$this->middleName?->value().' '.$this->lastName?->value());
     }
 
     protected function equalValues(AbstractValueObject|Name $object): bool

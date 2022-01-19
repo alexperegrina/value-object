@@ -46,7 +46,6 @@ class AddressType extends JsonType
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
         /** @var $value Address */
-
         if (null === $value) {
             return null;
         }
