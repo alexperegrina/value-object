@@ -4,8 +4,9 @@ declare(strict_types=1);
 namespace AlexPeregrina\ValueObject\Domain\Enum;
 
 use MabeEnum\Enum as BaseEnum;
+use Serializable;
 
-abstract class Enum extends BaseEnum
+abstract class Enum extends BaseEnum implements Serializable
 {
     public function value(): null|bool|int|float|string|array
     {
@@ -30,5 +31,15 @@ abstract class Enum extends BaseEnum
     public static function getClassAsString(object $object): string
     {
         return get_class($object);
+    }
+
+    public function serialize()
+    {
+//        return serialize($this->value());
+    }
+
+    public function unserialize($data)
+    {
+//        static::byValue($data);
     }
 }
