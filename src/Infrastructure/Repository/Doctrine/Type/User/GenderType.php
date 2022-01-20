@@ -20,7 +20,7 @@ class GenderType extends StringType
             return null;
         }
 
-        return Gender::byName($value);
+        return Gender::byValue($value);
     }
 
     /**
